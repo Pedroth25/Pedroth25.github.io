@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>School Magner</title>
+    <!--Espaco Reservado para o Stylr-->
+    <style>
+        /*Fotmatação Inicia da Página*/
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'system-ui';
+        }
+         /* cpnfigursções dp logo da Home page*/
+        .confi-logo{
+            position: fixed;
+            width: 100%;
+            height: 12vh;
+            border-bottom: 1px solid #808080;
+        }
+        .logo{
+            display: block;
+            justify-content: end;
+            text-align: left;
+        }
+       
+        .logo h1{
+            color: rgb(126, 159, 172);
+            position: relative;
+            padding: 14px 2px;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Verdana';
+            font-size: 38px;
+            font-weight: 500;
+      
+        }/*Fim das configurações do logo da home page*/
+      
+        /*Inicio das configurações de container*/
+        .container{
+            display: grid;
+            grid-template-columns: 25% 75%;
+        }
+        .lateral-menu{
+            position: fixed;
+            top: 12vh;
+            border-right: 1px solid #808080;
+            min-height: 88vh;
+            width: 20%;
+            background-color: rgb(74, 121, 139);
+            display: flex;
+            margin: 0 auto;
+        }
+        .lateral-menu  a {
+            position: relative;
+           
+           display: block;
+           padding: 20px 40px 2px 27px;
+           justify-content: space-around;
+           text-align: left;
+           color: #fff;
+           text-decoration: none;
+           font-size: 18px;
+           font-weight: 400;
+           transition: 0.5s;
+   
+        }
+         .lateral-menu  a:hover{
+            color: rgb(69, 132, 192);
+         }
+         /*Comecando a pagina menu principal*/
+        .home-space{
+             position: relative;
+             top: 100px;
+             left: 600px;
+             text-align: center;
+             align-items: center;
+             justify-content: center;
+        
+        }
+        .infor{
+            position: relative;
+            right: 100px;
+            align-items: center;
+            text-align: center;
+            display: block;
+            justify-self: center;
+            width: 100%;
+        }
+        .infor span img{
+            width: 700px;
+            height: 400px;
+            align-items: center;
+        }
+        .infor a{
+            position: relative;
+            left: 160px;
+            background-color: rgb(74, 121, 139);
+            text-decoration: none;
+            color: #fff;
+            font-size: 20px;
+            padding: 10px 45px;
+            border: none;
+            border-radius: 45px;
+        }
+
+        body{
+            touch-action: none;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+    </style>
+</head>
+<body>
+    <header><!--Imicio do cabecalho-->
+        <div class="confi-logo">
+          <div class="logo">
+            <h1>Tenet</h1>
+          </div>
+        </div>
+    </header><!--Fim do cabecalho-->
+   <div class="container">
+    <div class="lateral-menu">
+        <nav>
+            <a href="#">Registrar Impresa</a>
+            <a href="#">Tarefas</a>
+            <a href="#">Conhecer Gerenciador</a>
+            <a href="#">Estatisticas e Estimativas</a>
+            <a href="#">Operações</a>
+            <a href="#">Acerca</a>
+        </nav>
+    </div>
+    <div class="home-space">
+        <div class="infor">
+            <span><img src="assets/img/img1.jpg" alt="img"></span>
+            <a href="#">Get-Start</a>
+        </div>
+    </div>
+   </div>
+</body>
+</html>
